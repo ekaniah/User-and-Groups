@@ -1,0 +1,104 @@
+# Lab Title: User and Group 
+
+## Date: 05/21/2024
+
+## Lab Overview:
+Provide a brief overview of the lab, including the lab title and the purpose, in one or two sentences
+
+This lab teachs one the basics of managing user and group accounts for a Linux system. 
+Also how user and group databases work, create and modify user accounts and groups, and create password aging policies.
+And finally learn how to manage file permissions and ownership using the Linux command line.
+
+### Part #? - User and Group Management
+
+#### Time for Lab Completion:
+
+Provide the time to complete the lab in “HRS, MIN” format
+2hrs, 55mins
+
+#### Purpose of the lab
+Provide a detailed description of the lab, including what the main idea was, the tasks performed, how it relates to the unit, and how it relates to cybersecurity as a whole
+
+User and group management is an important aspect of cybersecurity as it involves managing access and privileges to computer resources, systems and data.
+In this lab I learnt the foundation of managing group and user account on Linux.Explore user and group databases.
+Create and modify group accounts.
+Create and modify user accounts, including password aging policies.
+Create special accounts.
+
+#### What did you enjoy about the lab?
+Your description here
+I enjoyed creating different users and groups.
+#### What did you find most challenging about the lab?
+Your description here
+keys like 'forward slash kept racing'. it made typing difficult.
+Discussion Questions A
+What is the location of the group database?
+/etc/group/
+What is the location of the user database?
+/etc/passwd/ and /etc/shadows/
+What is the location of the user passwords database?
+/etc/shadows/
+
+Discussion Questions B
+What is the command to add a group
+groupadd <groupname>
+What is the command to modify a group?
+groupmod -n <newgroup> <old group>
+What is the command to delete a group?
+groupdel<groupname>
+
+Discussion Questions C
+What is the command to add a user?
+useradd <username>
+What is the command to modify a user?
+usermod<username>
+What is the command to delete a user?
+userdel <username>
+What is the command to change a password?
+passwd <username>
+
+Discussion Questions D
+What is the option to create a system account?
+useradd -r <username>
+What are the system accounts designed for?
+It is designed for services and processes that run in the background.
+--------------------------------------------------------------------------------
+
+### Part 2 - Permissions Users and Groups in Linux
+
+#### Time for Lab Completion:
+Provide the time to complete the lab in “HRS, MIN” format, i.e. 1 hour, 10 minutes
+1hrs, 22mins
+#### Purpose of the Lab:
+Provide a detailed description of the lab, including what the main idea was, the tasks performed, how it relates to the unit, and how it relates to cybersecurity as a whole
+
+This lab teaches one how to conduct host security practices using the Linux command line. 
+How to work with users, groups, and file and directory permissions in Ubuntu. 
+Add groups, users, and passwords.
+Do symbolic permissions.
+Do absolute permissions.
+
+#### What did you enjoy about the lab?
+Your description here
+Everything
+#### What did you find most challenging about the lab?
+Your description here
+Representing Read, write and execute permission in Binary. I had to go back and revise base conversion
+Discussion Questions A
+What is the command to add a group?
+groupadd
+What is the command to add a user?
+useradd
+What is the command to change a password?
+passwd<username>
+
+Discussion Questions B
+What is the command to change the user to read, write, and execute permissions?
+chmod u+rwx
+What is the command to change the group to read and execute permissions?
+chmod g+rx
+Discussion Questions C
+What is chmod 764 <file>?
+rwx-rw-r
+What is chmod 705 <file>?
+rwx--rx
